@@ -1,24 +1,34 @@
 
-h2{
-    margin-bottom: 0;
+#searchBarDiv{
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#searchBarDiv>label{
+    font-size: 2rem;
 }
 
 #searchBar{
-    margin-bottom: 3rem;
-}
-#searchUser{
     font-size: 2rem;
     border-radius: 50px;
     color: #777;
     padding-left: 15px;
 }
 
-.result {
+
+#searchResultsDiv{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px  ,1fr));
+    gap: .25rem;
+}
+
+.searchResult {
     border: 1px red solid;
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
-    width: minmax(150px 1fr);
 }
 
 .resultHeader {
@@ -26,6 +36,6 @@ h2{
     font-weight: bold;
 }
 .resultBody {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #777;
 }
