@@ -1,0 +1,31 @@
+
+h2{
+    margin-bottom: 0;
+}
+
+#searchBar{
+    margin-bottom: 3rem;
+}
+#searchUser{
+    font-size: 2rem;
+    border-radius: 50px;
+    color: #777;
+    padding-left: 15px;
+}
+
+.result {
+    border: 1px red solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    width: minmax(150px 1fr);
+}
+
+.resultHeader {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.resultBody {
+    font-size: 1.5rem;
+    color: #777;
+}
