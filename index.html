@@ -5,35 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
     <title>Search Bar</title>
 </head>
 <body>
     <div id="searchBarDiv">
-        <label for="searchBar">Search Users</label>
+        <label for="searchBar">Search Contacts</label>
         <input type="search" id="searchBar"> 
     </div>
-    <div id="searchResultsDiv">
-        <div class="searchResult">
-            <div class="resultHeader">fred</div>
-            <div class="resultBody">fred@email.com</div>
-        </div>
-        <div class="searchResult">
-            <div class="resultHeader">eve</div>
-            <div class="resultBody">eve@email.com</div>
-        </div>
-        <div class="searchResult">
-            <div class="resultHeader">sam</div>
-            <div class="resultBody">sam@email.com</div>
-        </div>
-        <div class="searchResult">
-            <div class="resultHeader">dave</div>
-            <div class="resultBody">dave@email.com</div>
-        </div>
-        <div class="searchResult">
-            <div class="resultHeader">geordie</div>
-            <div class="resultBody">geordie@email.com</div>
-        </div>
+    <div id="searchResultsDiv" data-searchResults></div>
 
-    </div>
+    <template data-resultTemplate>
+        <div class="searchResult">
+            <div class="resultHeader" data-resultHeader></div>
+            <div class="resultBody" data-resultEmail></div>
+            <div class="resultBody" data-resultPhone></div>
+        </div>
+    </template>
 </body>
 </html>

@@ -32,10 +32,10 @@
 }
 
 .resultHeader {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .resultBody {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #777;
 }
